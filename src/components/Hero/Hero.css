@@ -1,12 +1,10 @@
 .heroContainer {
-  width: 100%;
-  height: 100vh;
   display: flex;
-  background: gray;
+  justify-content: center;
+  align-items: center;
 }
 
 .heroContainer h1 {
   font-size: var(--logo-fontSize);
   font-family: var(--primary-font);
-  align-self: flex-start;
 }

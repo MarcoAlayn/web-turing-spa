@@ -1,0 +1,13 @@
+.homeContainer {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    "hero hero hero hero"
+    "hola mundo mundo mundo";
+}
+
+.homeContainer .hero {
+  grid-area: hero;
+  background: red;
+}
