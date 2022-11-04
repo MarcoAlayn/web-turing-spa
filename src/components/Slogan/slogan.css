@@ -1,0 +1,5 @@
+.slogan h2 {
+  font-family: var(--secondary-font);
+  font-size: var(--font-size-slogan);
+  font-weight: var(--font-weight-slogan);
+}

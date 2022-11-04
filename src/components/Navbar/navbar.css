@@ -1,0 +1,12 @@
+.navbar {
+  display: flex;
+}
+
+.navbar .link {
+  font-family: var(--secondary-font);
+  font-size: var(--font-size-menu);
+  font-weight: var(--font-weight-menu);
+  text-transform: uppercase;
+  margin-left: 25px;
+  text-decoration: none;
+}

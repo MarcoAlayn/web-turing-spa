@@ -1,13 +1,33 @@
 .homeContainer {
   display: grid;
   gap: 16px;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(12, 1fr);
   grid-template-areas:
-    "hero hero hero hero"
-    "hola mundo mundo mundo";
+    "logo logo logo nav nav nav nav nav nav nav nav nav"
+    "slogan slogan slogan slogan x x x x x x x x";
 }
 
-.homeContainer .hero {
-  grid-area: hero;
+.homeContainer .logoContainer {
+  grid-area: logo;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  margin-top: 20px;
+  background: blue;
+}
+
+.homeContainer .navContainer {
+  grid-area: nav;
   background: red;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: 20px;
+}
+
+.homeContainer .sloganContainer {
+  grid-area: slogan;
+  background: yellow;
+  margin-top: 35vh;
 }
