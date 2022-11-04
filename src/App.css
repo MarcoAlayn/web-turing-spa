@@ -6,7 +6,6 @@
 body {
   max-width: 1440px;
   margin: auto 100px;
-  background: gray;
 }
 
 :root {
@@ -23,13 +22,13 @@ body {
   --font-size-h2: 28px;
   --font-size-text: 26px;
   --font-size-menu: 18px;
-  --font-size-slogan: 60px;
+  --font-size-slogan: 80px;
   --font-size-button: 18px;
 
   --font-weight-h1: 800;
   --font-weight-h2: 600;
   --font-weight-text: 400;
-  --font-weight-menu: 800;
-  --font-weight-slogan: 600;
+  --font-weight-menu: 600;
+  --font-weight-slogan: 400;
   --font-weight-button: 600;
 }

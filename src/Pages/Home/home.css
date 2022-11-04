@@ -7,6 +7,7 @@
     "slogan slogan slogan slogan slogan slogan slogan z z z z z "
     "callTo callTo callTo callTo callTo callTo callTo y y y y y"
     "button x x x x x x x x x x x";
+  /* "video w w w w w w w w w w w"; */
 }
 
 .homeContainer .logoContainer {
@@ -14,7 +15,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .homeContainer .navContainer {
@@ -22,12 +23,12 @@
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .homeContainer .sloganContainer {
   grid-area: slogan;
-  margin: 180px 0px 80px 0px;
+  margin: 140px 0px 0px 0px;
 }
 
 .homeContainer .buttonContainer {
@@ -40,6 +41,31 @@
   font-family: var(--primary-font);
   font-size: var(--font-size-text);
   font-weight: var(--font-weight-text);
-
   letter-spacing: 1px;
+}
+
+.homeContainer video {
+  position: absolute;
+  z-index: -2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.homeContainer .overslide {
+  background: linear-gradient(
+    rgb(0, 0, 0, 0.5) 5%,
+    transparent,
+    transparent,
+    rgb(0, 0, 0, 0.5) 90%
+  );
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
 }

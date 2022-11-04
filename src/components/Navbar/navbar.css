@@ -7,10 +7,10 @@
   font-family: var(--secondary-font);
   font-size: var(--font-size-menu);
   font-weight: var(--font-weight-menu);
-  text-transform: lowercase;
-  margin-left: 25px;
+  text-transform: uppercase;
+  margin-left: 30px;
   text-decoration: none;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 .navbar .link:hover,
