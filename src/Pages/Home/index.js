@@ -3,6 +3,7 @@ import "./home.css";
 import Logo from "../../components/Logo";
 import Navbar from "../../components/Navbar";
 import Slogan from "../../components/Slogan";
+import Button from "../../components/Button";
 
 function Home() {
   return (
@@ -15,6 +16,12 @@ function Home() {
       </div>
       <div className="sloganContainer">
         <Slogan />
+      </div>
+      <div className="buttonContainer">
+        <Button to="/" className="whiteButton" content="Conoce como" />
+      </div>
+      <div className="callTo">
+        <p>Nuestros servicios son sinónimo de escalabilidad</p>
       </div>
     </div>
   );

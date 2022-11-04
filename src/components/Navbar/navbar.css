@@ -3,10 +3,17 @@
 }
 
 .navbar .link {
+  color: var(--white-color);
   font-family: var(--secondary-font);
   font-size: var(--font-size-menu);
   font-weight: var(--font-weight-menu);
-  text-transform: uppercase;
+  text-transform: lowercase;
   margin-left: 25px;
   text-decoration: none;
+  letter-spacing: 2px;
+}
+
+.navbar .link:hover,
+.navbar .link:active {
+  text-decoration: underline 2px;
 }

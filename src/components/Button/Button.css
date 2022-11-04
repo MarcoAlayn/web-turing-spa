@@ -1,0 +1,22 @@
+.customButton {
+  width: max-content;
+}
+
+.customButton .whiteButton {
+  color: var(--white-color);
+  font-size: var(--font-size-button);
+  font-family: var(--secondary-font);
+  font-weight: var(--font-weight-button);
+
+  padding: 18px 25px;
+  border: 1px solid white;
+}
+
+.customButton :nth-child(1) {
+  text-decoration: none;
+}
+
+.customButton .whiteButton:hover {
+  color: var(--primary-color);
+  background: var(--white-color);
+}

@@ -2,6 +2,7 @@
   display: flex;
 }
 .logo h1 {
+  color: var(--white-color);
   font-size: var(--logo-fontSize);
   font-family: var(--primary-font);
 }

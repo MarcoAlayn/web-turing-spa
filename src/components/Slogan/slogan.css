@@ -1,5 +1,8 @@
 .slogan h2 {
+  color: var(--white-color);
   font-family: var(--secondary-font);
   font-size: var(--font-size-slogan);
   font-weight: var(--font-weight-slogan);
+  line-height: 60px;
+  letter-spacing: 2px;
 }

@@ -4,7 +4,9 @@
   grid-template-columns: repeat(12, 1fr);
   grid-template-areas:
     "logo logo logo nav nav nav nav nav nav nav nav nav"
-    "slogan slogan slogan slogan x x x x x x x x";
+    "slogan slogan slogan slogan slogan slogan slogan z z z z z "
+    "callTo callTo callTo callTo callTo callTo callTo y y y y y"
+    "button x x x x x x x x x x x";
 }
 
 .homeContainer .logoContainer {
@@ -12,14 +14,11 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-
   margin-top: 20px;
-  background: blue;
 }
 
 .homeContainer .navContainer {
   grid-area: nav;
-  background: red;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -28,6 +27,19 @@
 
 .homeContainer .sloganContainer {
   grid-area: slogan;
-  background: yellow;
-  margin-top: 35vh;
+  margin: 180px 0px 80px 0px;
+}
+
+.homeContainer .buttonContainer {
+  grid-area: button;
+}
+
+.homeContainer .callTo {
+  grid-area: callTo;
+  color: var(--white-color);
+  font-family: var(--primary-font);
+  font-size: var(--font-size-text);
+  font-weight: var(--font-weight-text);
+
+  letter-spacing: 1px;
 }
