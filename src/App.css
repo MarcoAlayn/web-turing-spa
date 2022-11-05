@@ -10,23 +10,25 @@ body {
 
 :root {
   --white-color: white;
-  --black-color: black;
-  --primary-color: #0f71f2;
-  --gray-color: #666f7a;
+  --black-color: #111;
+  --primary-color: #0c62fb;
+  --gray-color: #535353;
 
   --primary-font: "Dosis", sans-serif;
   --secondary-font: "Raleway", sans-serif;
 
   --logo-fontSize: 36px;
   --font-size-h1: 44px;
-  --font-size-h2: 28px;
+  --font-size-h2: 13px;
+  --font-size-h3: 36px;
   --font-size-text: 26px;
   --font-size-menu: 18px;
   --font-size-slogan: 80px;
   --font-size-button: 18px;
 
   --font-weight-h1: 800;
-  --font-weight-h2: 600;
+  --font-weight-h2: 400;
+  --font-weight-h3: 400;
   --font-weight-text: 400;
   --font-weight-menu: 600;
   --font-weight-slogan: 400;

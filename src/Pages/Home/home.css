@@ -6,8 +6,10 @@
     "logo logo logo nav nav nav nav nav nav nav nav nav"
     "slogan slogan slogan slogan slogan slogan slogan z z z z z "
     "callTo callTo callTo callTo callTo callTo callTo y y y y y"
-    "button x x x x x x x x x x x";
-  /* "video w w w w w w w w w w w"; */
+    "button x x x x x x x x x x x"
+    "weDo weDo weDo weDo weDo weDo weDo weDo weDo weDo weDo weDo"
+    "weAre weAre weAre weAre weAre weAre weAre weAre weAre weAre weAre weAre"
+    "buttonWeAre w w w w w w w w w w w";
 }
 
 .homeContainer .logoContainer {
@@ -68,4 +70,27 @@
   width: 100%;
   height: 100vh;
   object-fit: cover;
+}
+
+.homeContainer .textWeDo {
+  grid-area: weDo;
+  color: var(--primary-color);
+  font-family: var(--secondary-font);
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-h2);
+
+  margin-top: 100px;
+}
+
+.homeContainer .weAre {
+  grid-area: weAre;
+  color: var(--black-color);
+  font-family: var(--primary-font);
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-h3);
+  margin: 0px 0px 20px 0px;
+}
+
+.homeContainer .buttonContainerWeAre {
+  grid-area: buttonWeAre;
 }

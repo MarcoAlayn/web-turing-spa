@@ -10,6 +10,7 @@ function Home() {
   return (
     <div className="homeContainer">
       <div className="overslide"></div>
+      {/* hero */}
       <video src={Video} autoPlay muted loop />
       <div className="logoContainer">
         <Logo />
@@ -26,6 +27,21 @@ function Home() {
       <div className="callTo">
         <p>Nuestros servicios son sinónimo de escalabilidad</p>
       </div>
+      {/* hero */}
+      {/* body */}
+      <div className="textWeDo">
+        <h2>QUE HACEMOS</h2>
+      </div>
+      <div className="weAre">
+        <h3>
+          Turing-IA es una empresa de consultoría global de tecnología y
+          negocios que brinda soluciones que aportan al éxito de las empresas.
+        </h3>
+      </div>
+      <div className="buttonContainerWeAre">
+        <Button to="/" className="blueButton" content="Conoce como" />
+      </div>
+      {/* body */}
     </div>
   );
 }
