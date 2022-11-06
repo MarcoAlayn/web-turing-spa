@@ -5,6 +5,7 @@ import Navbar from "../../components/Navbar";
 import Slogan from "../../components/Slogan";
 import Button from "../../components/Button";
 import Video from "../../assets/Inicio.mp4";
+import Slideshow from "../../components/Slideshow";
 
 function Home() {
   return (
@@ -40,6 +41,9 @@ function Home() {
       </div>
       <div className="buttonContainerWeAre">
         <Button to="/" className="blueButton" content="Conoce como" />
+      </div>
+      <div className="slideContainer">
+        <Slideshow />
       </div>
       {/* body */}
     </div>

@@ -9,7 +9,8 @@
     "button x x x x x x x x x x x"
     "weDo weDo weDo weDo weDo weDo weDo weDo weDo weDo weDo weDo"
     "weAre weAre weAre weAre weAre weAre weAre weAre weAre weAre weAre weAre"
-    "buttonWeAre w w w w w w w w w w w";
+    "buttonWeAre w w w w w w w w w w w"
+    "slide slide slide slide slide slide slide slide slide slide slide slide";
 }
 
 .homeContainer .logoContainer {
@@ -93,4 +94,11 @@
 
 .homeContainer .buttonContainerWeAre {
   grid-area: buttonWeAre;
+}
+
+.homeContainer .slideContainer {
+  grid-area: slide;
+  max-width: 100%;
+  margin: 50px auto;
+  overflow: hidden;
 }
