@@ -10,6 +10,7 @@
     "weDo weDo weDo weDo weDo weDo weDo weDo weDo weDo weDo weDo"
     "weAre weAre weAre weAre weAre weAre weAre weAre weAre weAre weAre weAre"
     "buttonWeAre w w w w w w w w w w w"
+    "our our our our our our our our our our our our"
     "slide slide slide slide slide slide slide slide slide slide slide slide";
 }
 
@@ -36,6 +37,7 @@
 
 .homeContainer .buttonContainer {
   grid-area: button;
+  margin-bottom: 40px;
 }
 
 .homeContainer .callTo {
@@ -79,8 +81,6 @@
   font-family: var(--secondary-font);
   font-size: var(--font-size-h2);
   font-weight: var(--font-weight-h2);
-
-  margin-top: 100px;
 }
 
 .homeContainer .weAre {
@@ -89,7 +89,6 @@
   font-family: var(--primary-font);
   font-size: var(--font-size-h3);
   font-weight: var(--font-weight-h3);
-  margin: 0px 0px 20px 0px;
 }
 
 .homeContainer .buttonContainerWeAre {
@@ -99,6 +98,20 @@
 .homeContainer .slideContainer {
   grid-area: slide;
   max-width: 100%;
-  margin: 50px auto;
+
   overflow: hidden;
+}
+
+.homeContainer .textOurClients {
+  grid-area: our;
+  color: var(--primary-color);
+  font-family: var(--secondary-font);
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-h2);
+}
+
+/* separacion entre componentes */
+.homeContainer .textWeDo,
+.homeContainer .textOurClients {
+  margin: 110px 0px 20px 0px;
 }

@@ -42,6 +42,9 @@ function Home() {
       <div className="buttonContainerWeAre">
         <Button to="/" className="blueButton" content="Conoce como" />
       </div>
+      <div className="textOurClients">
+        <h2>HISTORIAS DE CLIENTES</h2>
+      </div>
       <div className="slideContainer">
         <Slideshow />
       </div>

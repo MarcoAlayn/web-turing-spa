@@ -1,7 +1,11 @@
 import React, { useRef, useEffect } from "react";
 import "./slideshow.css";
-import imagen from "../../assets/image1.jpg";
-import imagenDos from "../../assets/image2.jpg";
+// import imagen from "../../assets/image1.jpg";
+// import imagenDos from "../../assets/image2.jpg";
+import imagenTres from "../../assets/image3.jpg";
+import imagenCuatro from "../../assets/imagen4.jpg";
+import imagenCinco from "../../assets/imagen5.jpeg";
+import imagenSeis from "../../assets/imagen6.jpg";
 import { ReactComponent as LeftArrow } from "../../assets/iconmonstr-angel-left-thin.svg";
 import { ReactComponent as RightArrow } from "../../assets/iconmonstr-angel-right-thin.svg";
 
@@ -85,29 +89,40 @@ const Slideshow = () => {
       <div className="contenedorSlideshow" ref={slideshow}>
         <div className="slide">
           <a href="#">
-            <img src={imagen} alt="imagen 1" />
+            <img src={imagenCinco} alt="imagen 1" />
           </a>
           <p className="textoSlide">
-            Esta empresa nos compro y ahora es exitosa
+            JPMorgan Chase elige Tableau para ofrecer análisis de autoservicio y
+            seguir el vertiginoso ritmo de los cambios en el sector
           </p>
         </div>
         <div className="slide">
           <a href="#">
-            <img src={imagenDos} alt="imagen 2" />
+            <img src={imagenSeis} alt="imagen 2" />
           </a>
-          <p className="textoSlide">Este es un texto generico</p>
+          <p className="textoSlide">
+            Whole Foods Market democratiza el acceso a los datos en sus 460
+            tiendas para 18 000 empleados gracias a Tableau
+          </p>
         </div>
         <div className="slide">
           <a href="#">
-            <img src={imagen} alt="imagen 3" />
+            <img src={imagenTres} alt="imagen 3" />
           </a>
-          <p className="textoSlide">Este es otro caso de exito</p>
+          <p className="textoSlide">
+            Red Hat adopta el Blueprint de Tableau y Tableau Online, y
+            profundiza en la cultura de datos con más de 4500 empleados en menos
+            de un año
+          </p>
         </div>
         <div className="slide">
           <a href="#">
-            <img src={imagenDos} alt="imagen 4" />
+            <img src={imagenCuatro} alt="imagen 4" />
           </a>
-          <p className="textoSlide">Esta empresa fue nuetros primer cliente</p>
+          <p className="textoSlide">
+            Verizon usa Tableau para reducir las llamadas de soporte en un 43 %
+            y así mejorar la experiencia del cliente
+          </p>
         </div>
       </div>
       <div className="controles">
