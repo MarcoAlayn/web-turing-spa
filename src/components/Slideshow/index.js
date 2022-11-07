@@ -1,7 +1,5 @@
 import React, { useRef, useEffect } from "react";
 import "./slideshow.css";
-// import imagen from "../../assets/image1.jpg";
-// import imagenDos from "../../assets/image2.jpg";
 import imagenTres from "../../assets/image3.jpg";
 import imagenCuatro from "../../assets/imagen4.jpg";
 import imagenCinco from "../../assets/imagen5.jpeg";

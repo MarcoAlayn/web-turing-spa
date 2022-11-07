@@ -6,6 +6,7 @@ import Slogan from "../../components/Slogan";
 import Button from "../../components/Button";
 import Video from "../../assets/Inicio.mp4";
 import Slideshow from "../../components/Slideshow";
+import ImageNtext from "../../components/ImageNtext";
 
 function Home() {
   return (
@@ -48,6 +49,13 @@ function Home() {
       <div className="slideContainer">
         <Slideshow />
       </div>
+      <div className="theWayText">
+        <h2>LA MANERA IDEAL PARA MANEJAR TUS DATOS</h2>
+      </div>
+      <div className="ImgNtxt">
+        <ImageNtext />
+      </div>
+      <div className="relleno">soy un relleno</div>
       {/* body */}
     </div>
   );

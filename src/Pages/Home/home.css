@@ -11,7 +11,10 @@
     "weAre weAre weAre weAre weAre weAre weAre weAre weAre weAre weAre weAre"
     "buttonWeAre w w w w w w w w w w w"
     "our our our our our our our our our our our our"
-    "slide slide slide slide slide slide slide slide slide slide slide slide";
+    "slide slide slide slide slide slide slide slide slide slide slide slide"
+    "wayText wayText wayText wayText wayText wayText wayText wayText wayText wayText wayText wayText"
+    "imgNtxt imgNtxt imgNtxt imgNtxt imgNtxt imgNtxt imgNtxt imgNtxt imgNtxt imgNtxt imgNtxt imgNtxt"
+    "rell v v v v v v v v v v v";
 }
 
 .homeContainer .logoContainer {
@@ -98,7 +101,6 @@
 .homeContainer .slideContainer {
   grid-area: slide;
   max-width: 100%;
-
   overflow: hidden;
 }
 
@@ -112,6 +114,25 @@
 
 /* separacion entre componentes */
 .homeContainer .textWeDo,
-.homeContainer .textOurClients {
+.homeContainer .textOurClients,
+.homeContainer .theWayText {
   margin: 110px 0px 20px 0px;
+}
+
+.homeContainer .theWayText {
+  grid-area: wayText;
+  color: var(--primary-color);
+  font-family: var(--secondary-font);
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-h2);
+}
+
+.homeContainer .ImgNtxt {
+  grid-area: imgNtxt;
+  max-width: 100%;
+  /* overflow: hidden; */
+}
+
+.homeContainer .relleno {
+  grid-area: rell;
 }
