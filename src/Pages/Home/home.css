@@ -67,10 +67,8 @@
 
 .homeContainer .overslide {
   background: linear-gradient(
-    rgb(0, 0, 0, 0.5) 5%,
-    transparent,
-    transparent,
-    rgb(0, 0, 0, 0.5) 90%
+    rgb(0, 0, 0, 0.2) 5%,
+    /* transparent, */ rgb(0, 0, 0, 0.2) 90%
   );
   position: absolute;
   z-index: -1;
