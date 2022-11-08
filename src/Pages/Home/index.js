@@ -7,10 +7,21 @@ import Button from "../../components/Button";
 import Video from "../../assets/Inicio.mp4";
 import Slideshow from "../../components/Slideshow";
 import ImageNtext from "../../components/ImageNtext";
+import world from "../../assets/mundo.png";
+import angel from "../../assets/est.png";
+import image from "../../assets/image1.jpg";
+import image2 from "../../assets/image2.jpg";
+import ImageNtextT from "../../components/imgNtxt2 ";
 
 function Home() {
   return (
     <div className="homeContainer">
+      <div className="worldImg">
+        <img src={world} alt="imagen del mundo" />
+      </div>
+      <div className="angelImg">
+        <img src={angel} alt="imagen del angel de la independencia" />
+      </div>
       <div className="overslide"></div>
       {/* hero */}
       <video src={Video} autoPlay muted loop />
@@ -53,9 +64,13 @@ function Home() {
         <h2>LA MANERA IDEAL PARA MANEJAR TUS DATOS</h2>
       </div>
       <div className="ImgNtxt">
-        <ImageNtext />
+        <ImageNtext image={image} />
+      </div>
+      <div className="ImgNtxt2">
+        <ImageNtextT image={image2} />
       </div>
       <div className="relleno">soy un relleno</div>
+
       {/* body */}
     </div>
   );
