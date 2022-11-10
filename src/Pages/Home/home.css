@@ -170,7 +170,21 @@
 }
 
 .homeContainer .logos {
+  background: rgb(226, 226, 226);
   grid-area: logos;
   max-width: 100%;
   overflow: hidden;
+  height: 320px;
+}
+
+.homeContainer .logosText {
+  font-size: var(--font-size-text);
+  font-family: var(--secondary-font);
+  font-weight: var(--font-weight-text);
+  color: var(--black-color);
+  padding-left: 20px;
+}
+
+.homeContainer .btnLogos {
+  padding: 50px 0px 0px 20px;
 }

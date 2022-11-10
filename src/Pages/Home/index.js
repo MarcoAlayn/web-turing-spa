@@ -70,13 +70,23 @@ function Home() {
       <div className="ImgNtxt2">
         <ImageNtextT image={image2} />
       </div>
-      {/* <div className="relleno">soy un relleno</div> */}
       <div className="textTechno">
         <h2>TECNOLOGIAS QUE UTILIZAMOS</h2>
       </div>
       <div className="logos">
         <TechWeUse />
+        <div className="logosText">
+          <p>
+            Tenemos asociaciones sólidas con las principales y más reconocidas
+            empresas tecnológicas del mundo.
+          </p>
+        </div>
+        <div className="btnLogos">
+          <Button to="/" className="blueButton" content="Conoce más" />
+        </div>
       </div>
+
+      <div className="relleno">soy un relleno</div>
       {/* body */}
     </div>
   );
