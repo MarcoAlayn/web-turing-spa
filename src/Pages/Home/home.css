@@ -17,6 +17,7 @@
     "imgNtxt2 imgNtxt2 imgNtxt2 imgNtxt2 imgNtxt2 imgNtxt2 imgNtxt2 imgNtxt2 imgNtxt2 imgNtxt2 imgNtxt2 imgNtxt2"
     "tech tech tech tech tech tech tech tech tech tech tech tech"
     "logos logos logos logos logos logos logos logos logos logos logos logos"
+    "form  form  form form form form form form form form form form"
     "rell v v v v v v v v v v v";
 }
 
@@ -187,4 +188,10 @@
 
 .homeContainer .btnLogos {
   padding: 50px 0px 0px 20px;
+}
+
+.homeContainer .formContainer {
+  grid-area: form;
+  max-width: 100%;
+  overflow: hidden;
 }

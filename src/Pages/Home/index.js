@@ -13,6 +13,7 @@ import image from "../../assets/image1.jpg";
 import image2 from "../../assets/image2.jpg";
 import ImageNtextT from "../../components/imgNtxt2 ";
 import TechWeUse from "../../components/TechWeUse";
+import Form from "../../components/Form";
 
 function Home() {
   return (
@@ -85,7 +86,9 @@ function Home() {
           <Button to="/" className="blueButton" content="Conoce más" />
         </div>
       </div>
-
+      <div className="formContainer">
+        <Form />
+      </div>
       <div className="relleno">soy un relleno</div>
       {/* body */}
     </div>
