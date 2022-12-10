@@ -1,7 +1,9 @@
-import React from "react";
-import { Formik } from "formik";
+import React, { useState } from "react";
+import { Formik, Form, Field, ErrorMessage } from "formik";
 
-function Form() {
+function Formulario() {
+  const [enviado, setEnviado] = useState(false);
+  console.log("ErrorMessage", ErrorMessage);
   return (
     <div>
       <Formik
@@ -23,6 +25,7 @@ function Form() {
           if (!valores.name) {
             errores.name = "El nombre es obligatorio"; // si no hay nombre, entonces el error es "El nombre es obligatorio
           } else if (!/^[A-Z]+$/i.test(valores.name)) {
+            // si el nombre no es válido, entonces el error es "El nombre no es válido"
             errores.name = "El nombre no es válido";
           }
 
@@ -31,7 +34,6 @@ function Form() {
           } else if (
             !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(valores.email)
           ) {
-            // si el email no es válido, entonces el error es "El email no es válido"
             errores.email = "El email no es válido";
           }
 
@@ -63,130 +65,104 @@ function Form() {
 
           return errores;
         }}
-        onSubmit={(values) => {
-          // console.log("values:", values);
-          // console.log("submit");
+        // definimos la acción que se ejecutará cuando el usuario envíe el formulario
+        onSubmit={(values, { resetForm }) => {
+          // dispatch(values); // envía los datos del formulario a la store de redux
+
+          resetForm(); // resetea los inputs el formulario despues de enviarlo
+          setEnviado(true); // cambia el estado de enviado a true
+          setTimeout(() => {
+            setEnviado(false); // cambia el estado de enviado a false después de 3 segundos
+          }, 5000);
         }}
       >
-        {({
-          handleSubmit,
-          values,
-          handleChange,
-          handleBlur,
-          errors,
-          touched,
-        }) => (
-          <form onSubmit={handleSubmit}>
-            {console.log("touched", touched)}
+        {/* renderizamos el formulario */}
+        {({ errors }) => (
+          <Form>
+            {/* {console.log("touched", touched)} */}
             <div>
               <label htmlFor="name">Name</label>
-              <input
-                type="text"
-                id="name"
+              <Field type="text" id="name" name="name" placeholder="name" />
+              <ErrorMessage
                 name="name"
-                placeholder="name"
-                value={values.name}
-                onChange={handleChange} // valida cuando el usuario escribe en el input
-                onBlur={handleBlur} // valida cuando el usuario sale del input
+                component={() => <p>{errors.name}</p>}
               />
-              {touched.name && errors.name && <p>{errors.name}</p>}
             </div>
             <div>
               <label htmlFor="email">Email</label>
-              <input
-                type="email"
-                id="email"
+              <Field type="email" id="email" name="email" placeholder="email" />
+              <ErrorMessage
                 name="email"
-                placeholder="email"
-                value={values.email}
-                onChange={handleChange}
-                onBlur={handleBlur}
+                component={() => <p>{errors.email}</p>}
               />
-              {touched.email && errors.email && <p>{errors.email}</p>}
             </div>
             <div>
               <label htmlFor="phone">Phone</label>
-              <input
-                type="tel"
-                id="phone"
+              <Field type="tel" id="phone" name="phone" placeholder="phone" />
+              <ErrorMessage
                 name="phone"
-                placeholder="phone"
-                value={values.phone}
-                onChange={handleChange}
-                onBlur={handleBlur}
+                component={() => <p>{errors.phone}</p>}
               />
-              {touched.phone && errors.phone && <p>{errors.phone}</p>}
             </div>
             <div>
               <label htmlFor="company">Company</label>
-              <input
+              <Field
                 type="text"
                 id="company"
                 name="company"
                 placeholder="company"
-                value={values.company}
-                onChange={handleChange}
-                onBlur={handleBlur}
               />
-              {touched.company && errors.company && <p>{errors.company}</p>}
+              <ErrorMessage
+                name="company"
+                component={() => <p>{errors.company}</p>}
+              />
             </div>
             <div>
               <label htmlFor="job">Job</label>
-              <input
-                type="text"
-                id="job"
-                name="job"
-                placeholder="job"
-                value={values.job}
-                onChange={handleChange}
-                onBlur={handleBlur}
-              />
-              {touched.job && errors.job && <p>{errors.job}</p>}
+              <Field type="text" id="job" name="job" placeholder="job" />
+              <ErrorMessage name="job" component={() => <p>{errors.job}</p>} />
             </div>
             <div>
               <label htmlFor="country">Country</label>
-              <input
+              <Field
                 type="text"
                 id="country"
                 name="country"
                 placeholder="country"
-                value={values.country}
-                onChange={handleChange}
-                onBlur={handleBlur}
               />
-              {touched.country && errors.country && <p>{errors.country}</p>}
+              <ErrorMessage
+                name="country"
+                component={() => <p>{errors.country}</p>}
+              />
             </div>
             <div>
               <label htmlFor="city">City</label>
-              <input
-                type="text"
-                id="city"
+              <Field type="text" id="city" name="city" placeholder="city" />
+              <ErrorMessage
                 name="city"
-                placeholder="city"
-                value={values.city}
-                onChange={handleChange}
-                onBlur={handleBlur}
+                component={() => <p>{errors.city}</p>}
               />
-              {touched.city && errors.city && <p>{errors.city}</p>}
             </div>
             <div>
               <label htmlFor="message">Message</label>
-              <textarea
+              <Field
+                as="textarea"
                 id="message"
                 name="message"
                 placeholder="message"
-                value={values.message}
-                onChange={handleChange}
-                onBlur={handleBlur}
-              ></textarea>
-              {touched.message && errors.message && <p>{errors.message}</p>}
+              ></Field>
+              <ErrorMessage
+                name="message"
+                component={() => <p>{errors.message}</p>}
+              />
             </div>
             <button type="submit">Send</button>
-          </form>
+            {enviado && <p>Formulario enviado</p>}
+          </Form>
         )}
       </Formik>
     </div>
   );
 }
 
-export default Form;
+export default Formulario;
