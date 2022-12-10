@@ -1,9 +1,12 @@
 import React, { useState } from "react";
+import { useDispatch } from "react-redux";
 import { Formik, Form, Field, ErrorMessage } from "formik";
+import { sendContact } from "../../redux/actions";
 
 function Formulario() {
   const [enviado, setEnviado] = useState(false);
-  console.log("ErrorMessage", ErrorMessage);
+  // console.log("ErrorMessage", ErrorMessage);
+  const dispatch = useDispatch();
   return (
     <div>
       <Formik
@@ -68,7 +71,7 @@ function Formulario() {
         // definimos la acción que se ejecutará cuando el usuario envíe el formulario
         onSubmit={(values, { resetForm }) => {
           // dispatch(values); // envía los datos del formulario a la store de redux
-
+          dispatch(sendContact(values));
           resetForm(); // resetea los inputs el formulario despues de enviarlo
           setEnviado(true); // cambia el estado de enviado a true
           setTimeout(() => {
