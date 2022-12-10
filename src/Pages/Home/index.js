@@ -87,6 +87,8 @@ function Home() {
         </div>
       </div>
       <div className="formContainer">
+        <h2>¿QUIERES SABER MÁS?</h2>
+        <h2>CONTÁCTANOS</h2>
         <Form />
       </div>
       <div className="relleno">soy un relleno</div>

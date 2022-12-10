@@ -11,8 +11,8 @@ function TechWeUse() {
   const logos = [aws, google, microsoft, salesforce, snowflake, tableu];
   return (
     <div className="logosContainer">
-      {logos?.map((img) => {
-        return <img className="img" src={img} key={img.index} />;
+      {logos?.map((img, index) => {
+        return <img className="img" src={img} key={index} />;
       })}
     </div>
   );
