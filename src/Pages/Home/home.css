@@ -17,8 +17,10 @@
     "imgNtxt2 imgNtxt2 imgNtxt2 imgNtxt2 imgNtxt2 imgNtxt2 imgNtxt2 imgNtxt2 imgNtxt2 imgNtxt2 imgNtxt2 imgNtxt2"
     "tech tech tech tech tech tech tech tech tech tech tech tech"
     "logos logos logos logos logos logos logos logos logos logos logos logos"
+    "faqs faqs faqs faqs faqs faqs faqs faqs faqs faqs faqs faqs"
     "form  form  form form form form form form form form form form"
-    "rell v v v v v v v v v v v";
+    "news news news news news news news news news news news news "
+    "footer footer footer footer footer footer footer footer footer footer footer footer ";
 }
 
 .homeContainer .logoContainer {
@@ -137,10 +139,6 @@
   /* overflow: hidden; */
 }
 
-.homeContainer .relleno {
-  grid-area: rell;
-}
-
 .homeContainer .worldImg {
   width: 100%;
   position: absolute;
@@ -194,4 +192,16 @@
   grid-area: form;
   max-width: 100%;
   overflow: hidden;
+}
+
+.homeContainer .newsletter {
+  grid-area: news;
+}
+
+.homeContainer .footer {
+  grid-area: footer;
+}
+
+.homeContainer .faqs {
+  grid-area: faqs;
 }

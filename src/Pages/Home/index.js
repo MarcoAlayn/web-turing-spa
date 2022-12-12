@@ -14,6 +14,9 @@ import image2 from "../../assets/image2.jpg";
 import ImageNtextT from "../../components/imgNtxt2 ";
 import TechWeUse from "../../components/TechWeUse";
 import Form from "../../components/Form";
+import Footer from "../../components/Footer";
+import NewsletterForm from "../../components/Newsletters";
+import FAQs from "../../components/FAQ";
 
 function Home() {
   return (
@@ -51,6 +54,8 @@ function Home() {
         <h3>
           Turing-IA es una empresa de consultoría global de tecnología y
           negocios que brinda soluciones que aportan al éxito de las empresas.
+          Ofrecemos asesoramiento para la implementación de tecnología, análisis
+          de mercado, desarrollo de estrategias de negocios y más.
         </h3>
       </div>
       <div className="buttonContainerWeAre">
@@ -91,8 +96,18 @@ function Home() {
         <h2>CONTÁCTANOS</h2>
         <Form />
       </div>
-      <div className="relleno">soy un relleno</div>
+      <div className="faqs">
+        <FAQs />
+      </div>
+      <div className="newsletter">
+        <NewsletterForm />
+      </div>
       {/* body */}
+      {/* footer */}
+      <div className="footer">
+        <Footer />
+      </div>
+      {/* footer */}
     </div>
   );
 }
