@@ -1,0 +1,29 @@
+/* .faqsContainer {
+  background: var(--gray-color);
+} */
+
+.faqsContainer h2 {
+  font-family: var(--secondary-font);
+  color: var(--primary-color);
+  margin-bottom: 30px;
+}
+
+.faqsContainer h3,
+.faqsContainer p {
+  font-family: var(--secondary-font);
+  font-size: var(--font-size-text);
+}
+
+.faqsContainer p {
+  margin: 15px 40px;
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.513);
+}
+
+.faqsContainer ul {
+  list-style-type: none;
+}
+
+.faqsContainer svg {
+  fill: var(--primary-color);
+  margin-right: 10px;
+}

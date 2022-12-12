@@ -121,7 +121,8 @@
 .homeContainer .textOurClients,
 .homeContainer .theWayText,
 .homeContainer .ImgNtxt2,
-.homeContainer .textTechno {
+.homeContainer .textTechno,
+.homeContainer .faqs {
   margin: 110px 0px 20px 0px;
 }
 
