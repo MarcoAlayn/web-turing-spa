@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { sendContact } from "../../redux/actions";
+import "./Form.css";
 
 function Formulario() {
   const [enviado, setEnviado] = useState(false);
@@ -81,86 +82,126 @@ function Formulario() {
       >
         {/* renderizamos el formulario */}
         {({ errors }) => (
-          <Form>
+          <Form className="formularioContainer">
             {/* {console.log("touched", touched)} */}
-            <div>
-              <label htmlFor="name">Name</label>
-              <Field type="text" id="name" name="name" placeholder="name" />
-              <ErrorMessage
-                name="name"
-                component={() => <p>{errors.name}</p>}
-              />
+            <div className="formGroup">
+              <div className="tresElems">
+                <label htmlFor="name">Name</label>
+                <Field
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="name"
+                  autocomplete="off"
+                />
+                <ErrorMessage
+                  name="name"
+                  component={() => <p>{errors.name}</p>}
+                />
+              </div>
+              <div className="tresElems">
+                <label htmlFor="email">Email</label>
+                <Field
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="email"
+                  autocomplete="off"
+                />
+                <ErrorMessage
+                  name="email"
+                  component={() => <p>{errors.email}</p>}
+                />
+              </div>
+              <div className="tresElems">
+                <label htmlFor="phone">Phone</label>
+                <Field
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="phone"
+                  autocomplete="off"
+                />
+                <ErrorMessage
+                  name="phone"
+                  component={() => <p>{errors.phone}</p>}
+                />
+              </div>
+              <div className="tresElems">
+                <label htmlFor="company">Company</label>
+                <Field
+                  type="text"
+                  id="company"
+                  name="company"
+                  placeholder="company"
+                  autocomplete="off"
+                />
+                <ErrorMessage
+                  name="company"
+                  component={() => <p>{errors.company}</p>}
+                />
+              </div>
+              <div className="tresElems">
+                <label htmlFor="job">Job</label>
+                <Field
+                  type="text"
+                  id="job"
+                  name="job"
+                  placeholder="job"
+                  autocomplete="off"
+                />
+                <ErrorMessage
+                  name="job"
+                  component={() => <p>{errors.job}</p>}
+                />
+              </div>
             </div>
-            <div>
-              <label htmlFor="email">Email</label>
-              <Field type="email" id="email" name="email" placeholder="email" />
-              <ErrorMessage
-                name="email"
-                component={() => <p>{errors.email}</p>}
-              />
+            <div className="formGroupTwo">
+              <div className="tresElems">
+                <label htmlFor="country">Country</label>
+                <Field
+                  type="text"
+                  id="country"
+                  name="country"
+                  placeholder="country"
+                  autocomplete="off"
+                />
+                <ErrorMessage
+                  name="country"
+                  component={() => <p>{errors.country}</p>}
+                />
+              </div>
+              <div className="tresElems">
+                <label htmlFor="city">City</label>
+                <Field
+                  type="text"
+                  id="city"
+                  name="city"
+                  placeholder="city"
+                  autocomplete="off"
+                />
+                <ErrorMessage
+                  name="city"
+                  component={() => <p>{errors.city}</p>}
+                />
+              </div>
+              <div className="tresElems">
+                <label htmlFor="message">Message</label>
+                <Field
+                  as="textarea"
+                  id="message"
+                  name="message"
+                  placeholder="message"
+                  autocomplete="off"
+                ></Field>
+                <ErrorMessage
+                  name="message"
+                  component={() => <p>{errors.message}</p>}
+                />
+              </div>
+              <button type="submit">Enviar</button>
+              {enviado && <p>Formulario enviado</p>}
             </div>
-            <div>
-              <label htmlFor="phone">Phone</label>
-              <Field type="tel" id="phone" name="phone" placeholder="phone" />
-              <ErrorMessage
-                name="phone"
-                component={() => <p>{errors.phone}</p>}
-              />
-            </div>
-            <div>
-              <label htmlFor="company">Company</label>
-              <Field
-                type="text"
-                id="company"
-                name="company"
-                placeholder="company"
-              />
-              <ErrorMessage
-                name="company"
-                component={() => <p>{errors.company}</p>}
-              />
-            </div>
-            <div>
-              <label htmlFor="job">Job</label>
-              <Field type="text" id="job" name="job" placeholder="job" />
-              <ErrorMessage name="job" component={() => <p>{errors.job}</p>} />
-            </div>
-            <div>
-              <label htmlFor="country">Country</label>
-              <Field
-                type="text"
-                id="country"
-                name="country"
-                placeholder="country"
-              />
-              <ErrorMessage
-                name="country"
-                component={() => <p>{errors.country}</p>}
-              />
-            </div>
-            <div>
-              <label htmlFor="city">City</label>
-              <Field type="text" id="city" name="city" placeholder="city" />
-              <ErrorMessage
-                name="city"
-                component={() => <p>{errors.city}</p>}
-              />
-            </div>
-            <div>
-              <label htmlFor="message">Message</label>
-              <Field
-                as="textarea"
-                id="message"
-                name="message"
-                placeholder="message"
-              ></Field>
-              <ErrorMessage
-                name="message"
-                component={() => <p>{errors.message}</p>}
-              />
-            </div>
-            <button type="submit">Send</button>
-            {enviado && <p>Formulario enviado</p>}
           </Form>
         )}
       </Formik>
